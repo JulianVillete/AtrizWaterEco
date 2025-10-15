@@ -1588,6 +1588,14 @@ body {
         direction: ltr;
     }
     
+    .service-detailed .service-content {
+        order: 1;
+    }
+    
+    .service-detailed .service-image {
+        order: 2;
+    }
+    
     .about-story {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -1827,6 +1835,14 @@ body {
     
     .service-detailed {
         gap: 2rem;
+    }
+    
+    .service-detailed .service-content {
+        order: 1;
+    }
+    
+    .service-detailed .service-image {
+        order: 2;
     }
     
     .service-detailed h2 {
@@ -2107,6 +2123,14 @@ body {
     .service-detailed {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+    
+    .service-detailed .service-content {
+        order: 1;
+    }
+    
+    .service-detailed .service-image {
+        order: 2;
     }
     
     .service-detailed h2 {
