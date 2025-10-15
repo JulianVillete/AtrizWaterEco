@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atriz WaterEco</title>
+    <link rel="icon" type="image/png" href="logo/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Professional Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <img src="logo/logo.png" alt="Atriz WaterEco" class="loading-logo-img">
+            </div>
+            <div class="loading-text">
+                <h2>Atriz WaterEco</h2>
+                <p>Environmental and Sanitary Engineering</p>
+            </div>
+            <div class="loading-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo/logo.png" alt="Atriz WaterEco" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="permits.html" class="nav-link">Permits</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Atriz WaterEco</h1>
+            <p class="hero-subtitle">Environmental and Sanitary Engineering Consultation and Services</p>
+            <div class="hero-buttons">
+                <a href="services.html" class="btn btn-primary">Our Services</a>
+                <a href="contact.html" class="btn btn-secondary">Get Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">Pioneering sustainable water treatment solutions</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 style="color: #223B59;">Leading Innovation in Water Treatment</h3>
+                    <p>At Atriz WaterEco, we specialize in efficient waste water treatment services that combine cutting-edge technology with environmental responsibility. Our mission is to provide sustainable solutions that protect our water resources while meeting the growing demands of industry and communities.</p>
+                    <p>With years of expertise in water treatment technology, we've developed innovative processes that maximize efficiency while minimizing environmental impact. Our team of engineers and environmental specialists work tirelessly to deliver solutions that exceed industry standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive water treatment solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Water & Wastewater Treatment</h3>
+                    <p>Turnkey treatment solutions for potable water and wastewater—design, build and operate with full regulatory compliance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>System Design, Installation & Maintenance</h3>
+                    <p>End‑to‑end engineering: system sizing, on‑site installation, commissioning, and preventive maintenance programs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Equipment Supply & Technical Services</h3>
+                    <p>Supply of pumps, membranes, blowers, controls, and 24/7 technical support for reliable plant performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Carousel Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Work Gallery</h2>
+                <p class="section-subtitle">Explore our water treatment projects and installations</p>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-slide active">
+                            <img src="gallery/1.jpg" alt="Water Treatment Project 1" />
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="gallery/2.jpg" alt="Water Treatment Project 2" />
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="gallery/3.jpg" alt="Water Treatment Project 3" />
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="gallery/4.jpg" alt="Water Treatment Project 4" />
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="gallery/5.jpg" alt="Water Treatment Project 5" />
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" id="prevBtn">&#8249;</button>
+                    <button class="carousel-btn next" id="nextBtn">&#8250;</button>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Lightbox for Projects -->
+    <div id="projectLightbox" class="lightbox" aria-modal="true" role="dialog">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close" onclick="closeLightbox()">&times;</button>
+            <img id="lightboxImage" src="" alt="Project image preview" />
+        </div>
+    </div>
+
+    <!-- Values Section -->
+    <section class="section values-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Core Values</h2>
+                <p class="section-subtitle">What drives our commitment to excellence</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovative</h3>
+                    <p>We continuously invest in research and development to bring cutting-edge technologies to the water treatment industry.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainable</h3>
+                    <p>Our solutions prioritize environmental responsibility, ensuring long-term sustainability for future generations.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Reliable</h3>
+                    <p>We deliver consistent, dependable results through rigorous quality control and proven methodologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 style="color: white;">Atriz WaterEco</h3>
+                    <p>Leading the way in efficient waste water treatment services with innovative, sustainable, and reliable solutions.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/wwtpservicesandsupplies" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/atrizwatereco/" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Water & Wastewater Treatment</a></li>
+                        <li><a href="services.html">System Design, Installation & Maintenance</a></li>
+                        <li><a href="services.html">Equipment Supply & Technical Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="permits.html">Permits</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 0917 116 4242</p>
+                        <p><i class="fas fa-phone"></i> (049) 536 9510</p>
+                        <p><i class="fas fa-envelope"></i> admin@atrizwatereco.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 5365 Banlic - Mamatid Rd, Cabuyao City, Laguna, Philippines</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Atriz WaterEco. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Lightbox handlers
+        function openLightbox(src) {
+            const lb = document.getElementById('projectLightbox');
+            const img = document.getElementById('lightboxImage');
+            img.src = src;
+            lb.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lb = document.getElementById('projectLightbox');
+            const img = document.getElementById('lightboxImage');
+            lb.classList.remove('open');
+            img.src = '';
+            document.body.style.overflow = '';
+        }
+
+        // Carousel functionality
+        (function() {
+            const track = document.getElementById('carouselTrack');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.dot');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+
+            function updateCarousel() {
+                const translateX = -currentSlide * 100;
+                track.style.transform = `translateX(${translateX}%)`;
+                
+                // Update active slide
+                slides.forEach((slide, index) => {
+                    slide.classList.toggle('active', index === currentSlide);
+                });
+                
+                // Update active dot
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentSlide);
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateCarousel();
+            }
+
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            }
+
+            function goToSlide(slideIndex) {
+                currentSlide = slideIndex;
+                updateCarousel();
+            }
+
+            // Event listeners
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+            
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => goToSlide(index));
+            });
+
+            // Auto-play carousel
+            setInterval(nextSlide, 5000);
+
+            // Pause on hover
+            const carouselWrapper = document.querySelector('.carousel-wrapper');
+            let autoPlayInterval = setInterval(nextSlide, 5000);
+            
+            carouselWrapper.addEventListener('mouseenter', () => {
+                clearInterval(autoPlayInterval);
+            });
+            
+            carouselWrapper.addEventListener('mouseleave', () => {
+                autoPlayInterval = setInterval(nextSlide, 5000);
+            });
+        })();
+
+        // Professional Loading Screen
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            const body = document.body;
+            
+            // Add a small delay to show the loading screen
+            setTimeout(() => {
+                loadingScreen.classList.add('hidden');
+                body.classList.add('loaded');
+                
+                // Remove loading screen from DOM after animation
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 2000); // Show loading screen for 2 seconds minimum
+        });
+    </script>
+</body>
+</html>
