@@ -126,8 +126,11 @@
                 </div>
                 
                 <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" action="contact-form.php" method="POST">
                         <h3>Send us a Message</h3>
+                        
+                        <!-- Success/Error Message Display -->
+                        <div id="form-message" class="form-message" style="display: none;"></div>
                         
                         <div class="form-group">
                             <label for="name">Full Name *</label>
@@ -276,6 +279,59 @@
 
     <script src="script.js"></script>
     <script>
+        // Contact Form Handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const formData = new FormData(form);
+            const messageDiv = document.getElementById('form-message');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Hide previous messages
+            messageDiv.style.display = 'none';
+            
+            // Send form data
+            fetch('contact-form.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Show message
+                messageDiv.style.display = 'block';
+                messageDiv.className = 'form-message ' + (data.success ? 'success' : 'error');
+                messageDiv.textContent = data.message;
+                
+                // Reset button
+                submitBtn.innerHTML = 'Send Message';
+                submitBtn.disabled = false;
+                
+                // Clear form if successful
+                if (data.success) {
+                    form.reset();
+                    // Scroll to message
+                    messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            })
+            .catch(error => {
+                // Show error message
+                messageDiv.style.display = 'block';
+                messageDiv.className = 'form-message error';
+                messageDiv.textContent = 'Sorry, there was an error sending your message. Please try again.';
+                
+                // Reset button
+                submitBtn.innerHTML = 'Send Message';
+                submitBtn.disabled = false;
+                
+                console.error('Error:', error);
+            });
+        });
+        
         // Professional Loading Screen
         window.addEventListener('load', function() {
             const loadingScreen = document.getElementById('loading-screen');
