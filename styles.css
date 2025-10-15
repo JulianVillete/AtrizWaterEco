@@ -38,8 +38,10 @@
 }
 
 .loading-logo-img {
-    height: 120px;
+    height: 150px;
     width: auto;
+    max-width: 400px;
+    object-fit: contain;
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
 }
 
@@ -189,9 +191,10 @@ body {
 }
 
 .logo-img {
-    height: 80px;
+    height: 90px;
     width: auto;
     object-fit: contain;
+    max-width: 300px;
 }
 
 .nav-logo h2 {
@@ -1508,7 +1511,8 @@ body {
     }
     
     .logo-img {
-        height: 60px;
+        height: 70px;
+        max-width: 250px;
     }
     
     .hamburger {
@@ -1723,7 +1727,8 @@ body {
     }
     
     .logo-img {
-        height: 50px;
+        height: 60px;
+        max-width: 200px;
     }
     
     .nav-menu {
@@ -1961,7 +1966,8 @@ body {
     }
     
     .logo-img {
-        height: 45px;
+        height: 55px;
+        max-width: 180px;
     }
     
     .nav-menu {
@@ -2350,7 +2356,8 @@ body {
     }
     
     .logo-img {
-        height: 40px;
+        height: 50px;
+        max-width: 150px;
     }
     
     .nav-menu {
